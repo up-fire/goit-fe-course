@@ -26,6 +26,7 @@
 .container {
   width: 900px;
   margin: auto;
+  font-size: 0;
 }
 .article {
   display: inline-block;
@@ -61,6 +62,7 @@
   color: #626262;
 }
 .button {
+  cursor: pointer;
   display: block;
   margin: auto;
   width: 164px;
@@ -76,7 +78,6 @@
   font-size: 20px;
   color: #626262;
 }
-
 a:link {
   text-decoration: none;
 }
