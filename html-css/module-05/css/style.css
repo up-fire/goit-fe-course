@@ -67,11 +67,17 @@ a {
 .menu-item:last-child {
   margin-right: 0;
 }
+.slider-bg {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .slider {
   font-size: 0;
   position: relative;
   width: 1110px;
-  height: 600px;
+  min-height: 600px;
   margin: auto;
 }
 .slider-nav {
@@ -84,7 +90,7 @@ a {
   font-size: 40px;
   color: #fff;
   top: 50%;
-  transform: translateY(50%);
+  transform: translate(0%, -50%);
   z-index: 1;
   cursor: pointer;
 }
@@ -107,15 +113,6 @@ a {
   width: 1600px;
   object-fit: cover;
 }
-.overlay {
-  position: absolute;
-  display: block;
-  color: black;
-  top: 0;
-  left: 0;
-  width: 1600px;
-  height: 600px;
-}
 .slides-item {
   position: relative;
 }
@@ -137,7 +134,8 @@ a {
 .slider-text {
   display: inline-block;
   font-size: 24px;
-  font-weight: 300;
+  line-height: 40px;
+  font-weight: 100;
 }
 .section-title {
   font-family: "roboto", serif;
