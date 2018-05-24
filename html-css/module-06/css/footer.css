@@ -1,0 +1,61 @@
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 82px;
+  height: 62px;
+  border-top: 1px solid #e5e5e5;
+  padding: 12px 0px 12px 0px;
+}
+.copyright {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 36px;
+  vertical-align: center;
+}
+.footer-link {
+  display: inline-block;
+  color: #f38181;
+  transition: color 0.2s linear;
+}
+.footer-link:hover {
+  color: #95e1d3;
+}
+.subscription {
+  font-size: 0px;
+}
+.input {
+  padding-left: 10px;
+  height: 40px;
+  width: 230px;
+  color: #e7e7e7;
+  font-family: Montserrat;
+  font-size: 14px;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  transition: border 0.2s linear;
+}
+.input:hover {
+  border: 1px solid #d3d3d3;
+}
+.primary-btn {
+  margin-left: -1px;
+  height: 40px;
+  width: 150px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  background-color: #95e1d3;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.primary-btn:hover {
+  background-color: #4ec6ab;
+}
