@@ -103,18 +103,11 @@ a {
 }
 .slide-img {
   display: block;
-  height: 600px;
-  width: 1600px;
+  width: 100%;
   object-fit: cover;
 }
 .overlay {
-  position: absolute;
-  display: block;
-  color: black;
-  top: 0;
-  left: 0;
-  width: 1600px;
-  height: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .slides-item {
   position: relative;
