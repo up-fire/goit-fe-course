@@ -1,0 +1,71 @@
+
+.services {
+  margin-top: 110px;
+}
+.section-title {
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+}
+.section-subtitle {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.section-subtitle::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 60px;
+  background-color: #f38181;
+  margin: 0 auto;
+  margin-top: 42px;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 66px;
+}
+.service-card {
+  font-size: 0;
+  flex-basis: 33%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 160px;
+}
+.card-icon {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 28px;
+  color: #95e1d3;
+}
+.card-info {
+  width: 70%;
+  display: inline-block;
+  font-family: Montserrat;
+  margin-left: 20px;
+}
+.card-title {
+  color: #333333;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  vertical-align: top;
+}
+.card-descr {
+  color: #999999;
+  font-size: 13px;
+  line-height: 22px;
+  margin-top: 6px;
+}

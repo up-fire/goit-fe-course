@@ -1,0 +1,53 @@
+@import "fonts.css";
+@import "header.css";
+@import "services.css";
+@import "contact.css";
+
+html {
+font-size: 16px;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+button {
+  border: none;
+}
+input {
+  border: 0;
+  width: 100%;
+}
+.container {
+  width: 59rem;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+
+.page-header {
+  height: 40px;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 65px;
+}
+.logo {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 42px;
+  color: #95e1d3;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 40%;
+}
+.menu-link {
+  position: relative;
+  display: block;
+  padding: 8px 0;
+  color: #95e1d3;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  vertical-align: center;
+  transition: color 0.2s linear;
+}
+.menu-link::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #f38181;
+  content: "";
+  opacity: 0;
+  transition: height 0.2s, opacity 0.2s, transform 0.2s linear;
+  transform: translateY(-10px);
+}
+a:hover {
+  color: #f38181;
+}
+.menu-link:hover::after {
+  height: 3px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+

@@ -1,0 +1,41 @@
+.page-header {
+  padding-top: 2.75rem;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3.75rem;
+}
+.logo {
+  font-family: 'Lobster Two', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.9rem;
+  font-weight: ;
+  line-height: 3.75rem;
+  color: #fed136;
+  vertical-align: top;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 50%;
+}
+.menu-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0;
+  color: #222222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  vertical-align: center;
+  transition: color 0.2s linear;
+}
+.menu-link:hover {
+  color: #fed136;
+}

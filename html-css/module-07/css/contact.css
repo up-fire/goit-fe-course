@@ -1,0 +1,110 @@
+.wrapper-contact {
+  background-image: url("../img/map.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #222222;
+}
+.contact {
+  margin-top: 7.5rem;
+  padding: 6.9rem 0;
+}
+.contact-title {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.contact-descr {
+  color: #777777;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.form {
+  margin-top: 4.75rem;
+  padding-top: 1.25rem;
+}
+.form input::placeholder {
+  color: #bbbbbb;
+}
+.form input:valid {
+  outline-color: #3cb878;
+}
+.form input:invalid {
+  outline-color: #ef3232;
+}
+.form textarea::placeholder {
+  color: #bbbbbb;
+}
+.form textarea:valid {
+  outline-color: #3cb878;
+}
+.form textarea:invalid {
+  outline-color: #ef3232;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.fields-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 48%;
+}
+.field {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  padding: 0 1.25rem 0 1.25rem;
+  display: block;
+  border: 0.06rem solid #cccccc;
+  height: 3.1rem;
+  border-radius: 0.13rem;
+  margin-top: 1.87rem;
+  text-transform: uppercase;
+}
+.field:first-child {
+  margin-top: 0;
+}
+.message {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  flex-basis: 49%;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  border: 0.06rem solid #cccccc;
+  border-radius: 0.13rem;
+  text-transform: uppercase;
+}
+.button {
+  width: 15rem;
+  height: 4rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: block;
+  background-color: #fed136;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.25rem;
+  border: none;
+  border-radius: 0.13rem;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.button:hover {
+  background-color: #ffc600;
+}

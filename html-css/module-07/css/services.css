@@ -1,0 +1,54 @@
+
+.services {
+  margin-top: 7.5rem;
+}
+.section-title {
+  color: #222222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.section-descr {
+  color: #777777;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4.8rem;
+}
+.section-item {
+flex-basis: 30%;
+}
+.section-icon {
+  margin: 0 auto;
+}
+.service-title{
+  color: #222222;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.13rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.service-descr {
+  color: #777777;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  text-align: center;
+  margin-top: 1rem;
+}
