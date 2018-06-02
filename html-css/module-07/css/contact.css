@@ -51,12 +51,12 @@
 }
 .inputs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .fields-left {
   display: flex;
   flex-direction: column;
-  flex-basis: 48%;
+  flex-basis: 45%;
 }
 .field {
   font-family: 'Montserrat', sans-serif;
@@ -79,7 +79,7 @@
   font-weight: 800;
   font-size: 0.9rem;
   line-height: 1.5rem;
-  flex-basis: 49%;
+  flex-basis: 45%;
   padding: 0.75rem 1.25rem 0.75rem 1.25rem;
   border: 0.06rem solid #cccccc;
   border-radius: 0.13rem;
