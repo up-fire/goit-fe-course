@@ -126,12 +126,12 @@
 @media (min-width: 560px) {
 .partners-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0 4rem;
 }
-.item {
-  flex-basis: 50%;
+.partner-descr {
+  width: 90%;
 }
 .see-more {
   width: auto;
@@ -146,4 +146,5 @@
 }
 .item {
   margin-bottom: 0;
+}
 }
