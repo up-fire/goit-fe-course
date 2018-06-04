@@ -18,6 +18,7 @@
 .item {
   margin-bottom: 1.85rem;
   cursor: pointer;
+  flex-basis: 80%;
 }
 .item:hover > .partner-name {
   color: #ff4e50;
@@ -124,27 +125,27 @@
 }
 
 @media (min-width: 560px) {
-.partners-list {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 0 4rem;
-}
-.partner-descr {
-  width: 90%;
-}
-.see-more {
-  width: auto;
-  padding: 0.6rem 1.5rem;
-}
+  .partners-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+  }
+  .see-more {
+    width: auto;
+    padding: 0.6rem 1.5rem;
+  }
 }
 @media (min-width: 940px) {
-.partners-list {
-  flex-wrap: nowrap;
-  margin-bottom: 1.85rem;
-  padding: 0;
-}
-.item {
-  margin-bottom: 0;
-}
+  .partners-list {
+    flex-wrap: nowrap;
+    margin-bottom: 1.85rem;
+    padding: 0;
+  }
+  .item {
+    margin-bottom: 0;
+  }
+  .partner-descr {
+    width: 90%;
+  }
 }
