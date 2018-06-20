@@ -1,0 +1,123 @@
+.wrapper {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url("../img/banner-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 0.5rem 0 13rem 0;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+}
+.logo {
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: #fff;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 60%;
+}
+.menu__link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+  vertical-align: center;
+  transition: color 0.2s linear;
+}
+.menu__link::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0.05rem;
+  background: #fce38a;
+  content: "";
+  opacity: 0;
+  transition: height 0.2s, opacity 0.2s, transform 0.2s linear;
+  transform: translateY(-0.625rem);
+}
+.menu__link:hover {
+  color: #fce38a;
+}
+.menu__link:hover::after {
+  height: 0.1875rem;
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+.header-icon {
+  display: inline-block;
+  fill: #fff;
+}
+
+.header-icon__cart {
+  fill: #fff;
+  width: 32px;
+  height: 32px;
+}
+.title {
+  font-family: "Kaushan Script", serif;
+  text-align: center;
+}
+.title--banner {
+  color: #fff;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  margin-top: 10.25rem;
+}
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+.subtitle--banner {
+  color: #fff;
+  font-size: 9.375rem;
+  margin-top: 2.5rem;
+}
+.btn {
+  margin: 0 auto;
+  height: 2.5rem;
+  padding: 0 1rem 0 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.btn--stroke {
+border: 0.1875rem solid #fff;
+background: transparent;
+background-color: transparent;
+margin-top: 7rem;
+}
+.btn--stroke:hover {
+  background-color: #fff;
+  color: #fce38a;
+  border: 0.1875rem solid #fff;
+}

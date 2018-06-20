@@ -1,0 +1,73 @@
+
+.services {
+  margin-top: 3rem;
+}
+.title--section {
+  color: #333333;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.subtitle--section {
+  color: #333333;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+}
+.subtitle--section::after {
+  display: block;
+  content: "";
+  height: 0.1875rem;
+  width: 3.75rem;
+  background-color: #f38181;
+  margin: 0 auto;
+  margin-top: 2.625rem;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4.125rem;
+}
+.service-item {
+  font-size: 0;
+  flex-basis: 30%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 10rem;
+}
+.service-item--info {
+
+}
+.service-icon::before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.service-icon__card-1 {
+  background-image: url('../img/symbol-defs.svg#icon-alarm');
+}
+
+.item-title {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+.item-title--service {
+  vertical-align: top;
+}
+.item-descr {
+  font-family: "Montserrat", sans-serif;
+  color: #999999;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+.item-descr--service {
+  margin-top: 0.375rem;
+}
