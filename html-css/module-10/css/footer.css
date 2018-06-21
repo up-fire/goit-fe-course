@@ -1,9 +1,6 @@
 
 .footer {
-  /* position: fixed; */
-  display: flex;
   height: 3.875rem;
-  justify-content: space-between;
   margin-top: 5.125rem;
   border-top: 1px solid #e5e5e5;
   padding: 12px 0px 12px 0px;
@@ -15,12 +12,14 @@
   line-height: 2.25rem;
   vertical-align: center;
 }
-.footer-link {
+.footer__link {
   display: inline-block;
   color: #f38181;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
-.footer-link:hover {
+.footer__link:hover {
   color: #95e1d3;
 }
 .subscription {
@@ -30,20 +29,37 @@
   padding-left: 0.625rem;
   height: 2.5rem;
   width: 14.38rem;
-  color: #e7e7e7;
   font-family: Montserrat;
   font-size: 0.875rem;
   border: 0.0625rem solid #e7e7e7;
   background-color: #ffffff;
+  -webkit-transition: border 0.2s linear;
+  -o-transition: border 0.2s linear;
   transition: border 0.2s linear;
+}
+.input::-webkit-input-placeholder {
+  color: #e7e7e7;
+}
+.input:-ms-input-placeholder {
+  color: #e7e7e7;
+}
+.input::-ms-input-placeholder {
+  color: #e7e7e7;
+}
+.input::placeholder {
+  color: #e7e7e7;
 }
 .input:hover {
   border: 0.0625rem solid #d3d3d3;
 }
-.btn__solid {
+.input:focus {
+  border: 0.0625rem solid #95e1d3;
+  outline: none;
+}
+.btn--solid {
   background-color: #95e1d3;
   border: none;
 }
-.btn__solid:hover {
+.btn--solid:hover {
   background-color: #4ec6ab;
 }

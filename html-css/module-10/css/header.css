@@ -1,4 +1,23 @@
 .wrapper {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(243, 129, 129, 0.9)),
+      to(rgba(252, 227, 138, 0.9))
+    ),
+    url("../img/banner-min.jpg");
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url("../img/banner-min.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url("../img/banner-min.jpg");
   background-image: linear-gradient(
       to bottom,
       rgba(243, 129, 129, 0.9),
@@ -13,9 +32,15 @@
 }
 
 .site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 4rem;
 }
 .logo {
@@ -26,8 +51,12 @@
   color: #fff;
 }
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-width: 60%;
 }
 .menu__link {
@@ -41,19 +70,27 @@
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
   vertical-align: center;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 .menu__link::after {
+  content: "";
+  opacity: 0;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   height: 0.05rem;
   background: #fce38a;
-  content: "";
-  opacity: 0;
+  -webkit-transition: height 0.2s, opacity 0.2s, -webkit-transform 0.2s linear;
+  transition: height 0.2s, opacity 0.2s, -webkit-transform 0.2s linear;
+  -o-transition: height 0.2s, opacity 0.2s, transform 0.2s linear;
   transition: height 0.2s, opacity 0.2s, transform 0.2s linear;
-  transform: translateY(-0.625rem);
+  transition: height 0.2s, opacity 0.2s, transform 0.2s linear, -webkit-transform 0.2s linear;
+  -webkit-transform: translateY(-0.625rem);
+      -ms-transform: translateY(-0.625rem);
+          transform: translateY(-0.625rem);
 }
 .menu__link:hover {
   color: #fce38a;
@@ -61,18 +98,31 @@
 .menu__link:hover::after {
   height: 0.1875rem;
   opacity: 1;
-  transform: translateY(0rem);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
-
+.header-icon-set {
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  fill: #fff;
+  padding: .875rem 0 0 0;
+}
 .header-icon {
-  display: inline-block;
   fill: #fff;
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-transition: fill 0.2s linear;
+  -o-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
 }
-
-.header-icon__cart {
-  fill: #fff;
-  width: 32px;
-  height: 32px;
+.header-icon:hover {
+  fill: #fce38a;
 }
 .title {
   font-family: "Kaushan Script", serif;
@@ -99,7 +149,7 @@
 .btn {
   margin: 0 auto;
   height: 2.5rem;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1.75rem 0 1.75rem;
   text-transform: uppercase;
   color: #ffffff;
   font-family: Montserrat;
@@ -108,6 +158,8 @@
   line-height: 2rem;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
 }
 .btn--stroke {
@@ -118,6 +170,6 @@ margin-top: 7rem;
 }
 .btn--stroke:hover {
   background-color: #fff;
-  color: #fce38a;
+  color: #f38181;
   border: 0.1875rem solid #fff;
 }

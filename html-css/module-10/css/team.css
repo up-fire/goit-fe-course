@@ -1,25 +1,25 @@
-.item-descr--team-setion {
+.item-descr--team-section {
   margin: 0 auto;
   text-align: center;
   margin-top: 2.5rem;
   margin-bottom: 5.75rem;
 }
-
-.team-list {
-  display: flex;
-  justify-content: space-between;
-}
-.team-card {
+.team__card {
   font-size: 0px;
-  position: relative;
-  flex-basis: 23.75rem;
-  flex-grow: 0;
-  flex-shrink: 0;
+  -ms-flex-preferred-size: 23.75rem;
+      flex-basis: 23.75rem;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-family: Montserrat;
 }
-.team-img {
+.team__card-img {
   display: block;
   margin-bottom: 1.75rem;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   background-size: cover; 
 }
@@ -29,8 +29,28 @@
 .item-descr--team {
   margin: 0 auto;
   text-align: center;
+  line-height: 2rem;
 }
-.card-hover {
+.team__card-img-group {
+  position: relative;
+}
+.team__card-hover {
+  background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(243, 129, 129, 0.9)),
+    to(rgba(252, 227, 138, 0.9))
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(243, 129, 129, 0.9),
+    rgba(252, 227, 138, 0.9)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    rgba(243, 129, 129, 0.9),
+    rgba(252, 227, 138, 0.9)
+  );
   background-image: linear-gradient(
     to bottom,
     rgba(243, 129, 129, 0.9),
@@ -40,38 +60,62 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 29.38rem;
-  box-shadow: 0.625rem 0.625rem 0 0 #95e1d3;
+  height: 100%;
+  -webkit-box-shadow: 0.625rem 0.625rem 0 0 #95e1d3;
+          box-shadow: 0.625rem 0.625rem 0 0 #95e1d3;
   opacity: 0;
-  transform: translate(-0.625rem, -0.625rem);
+  -webkit-transform: translate(-0.625rem, -0.625rem);
+      -ms-transform: translate(-0.625rem, -0.625rem);
+          transform: translate(-0.625rem, -0.625rem);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.team-card:hover > .card-hover {
+.team__card-img-group:hover > .team__card-hover {
   opacity: 1;
 }
-.team-card:hover > .team-img {
-  transform: translate(-0.625rem, -0.625rem);
+.team__card-img-group:hover > .team__card-img {
+  -webkit-transform: translate(-0.625rem, -0.625rem);
+      -ms-transform: translate(-0.625rem, -0.625rem);
+          transform: translate(-0.625rem, -0.625rem);
 }
-.social-icon-bg {
-  height: 56px;
-  width: 56px;
+.social-icon__bg {
+  position: relative;
+  height: 3.5rem;
+  width: 3.5rem;
   background-color: #fce38a;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
 }
 .social-icon {
+  position: absolute;
   fill: #f38181;
+  top: 23%;
+  left: 21%;
+  -webkit-transition: fill 0.2s linear;
+  -o-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
 }
-.social-icon-bg:hover {
+.social-icon__bg:hover {
   background-color: #f38181;
   cursor: pointer;
 }
+.social-icon__bg:hover svg {
+  fill: #fff;
+}
 .icon-container {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: absolute;
   width: 14.25rem;
   top: 50%;
-  transform: translate(35%, -50%);
+  -webkit-transform: translate(35%, -50%);
+      -ms-transform: translate(35%, -50%);
+          transform: translate(35%, -50%);
 }
-
